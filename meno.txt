@@ -1,0 +1,23 @@
+
+
+#  npm run build 
+
+#  npm run start
+
+npx json-server --port 9999 --watch db.json
+
+
+
+개발자 도구에서 데이터 콘솔 로그로 받아오기
+fetch('http://localhost:9999/topics')
+.then((resp)=>{
+    return resp.json();
+    })
+    .then(result=>{
+    console.log('result', result);
+    });
+
+10강 5분
+
+
+
